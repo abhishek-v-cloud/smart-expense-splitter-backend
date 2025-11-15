@@ -2,13 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const errorHandler = require('./middleware/errorHandler');
+const errorHandler = require('./src/middleware/errorHandler');
 
 // Import routes
-const authRoutes = require('./routes/authRoutes');
-const groupRoutes = require('./routes/groupRoutes');
-const expenseRoutes = require('./routes/expenseRoutes');
-const settlementRoutes = require('./routes/settlementRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const groupRoutes = require('./src/routes/groupRoutes');
+const expenseRoutes = require('./src/routes/expenseRoutes');
+const settlementRoutes = require('./src/routes/settlementRoutes');
 
 const app = express();
 
